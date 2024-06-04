@@ -1,5 +1,5 @@
 //
-//  Book.swift
+//  OwnerPrefs.swift
 //  TimetonicBooks
 //
 //  Created by Diegoe012 on 3/06/24.
@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Book: Codable {
-    let name: String
+struct OwnerPrefs: Codable {
+    let oCoverImg: String
+    
 }
