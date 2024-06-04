@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct User: Codable {
+    let email: String
+    let password: String
+    var sessionToken: String?
+    var isAuth: Bool?
+}
