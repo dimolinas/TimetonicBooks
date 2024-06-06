@@ -9,5 +9,4 @@ import Foundation
 
 struct OwnerPrefs: Codable {
     let oCoverImg: String
-    
 }
