@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct LandingPage: View {
+    
+    private var books: [Book] = [
+            Book(b_c: "123456", description: "The Great Gatsby", ownerPrefs: OwnerPrefs(oCoverImg: "gatsby_cover")),
+            Book(b_c: "789012", description: "To Kill a Mockingbird", ownerPrefs: OwnerPrefs(oCoverImg: "mockingbird_cover")),
+            Book(b_c: "345678", description: "1984", ownerPrefs: OwnerPrefs(oCoverImg: "1984_cover")),
+            Book(b_c: "901234", description: "Pride and Prejudice", ownerPrefs: OwnerPrefs(oCoverImg: "pride_prejudice_cover"))
+        ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            HStack(alignment: .top, content: {
+                Text("Timetonic Books")
+                    .font(.largeTitle)
+                    .padding()
+            })
+        }
+        
     }
 }
 

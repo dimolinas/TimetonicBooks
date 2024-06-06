@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct LoginPageView: View {
+    
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("Username", text: $username)
+                .autocorrectionDisabled(true)
+            
+            SecureField("Password", text: $password)
+            
+        }
     }
 }
 
